@@ -1,3 +1,4 @@
+#!/bin/sh -l
 # Setzen von GIT_SSL_NO_VERIFY
 export GIT_SSL_NO_VERIFY="true"
 
