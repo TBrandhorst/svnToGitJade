@@ -4,10 +4,8 @@ COPY entrypoint.sh /entrypoint.sh
 
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y git && \
-	apt-get install -y git-svn && \
-	apt-get install subversion && \
-	apk update && \
-	apk add openjdk11
+    apt-get install -y git git-svn subversion && \
+    apt-get install -y openjdk-11-jdk && \
+    chmod +x /entrypoint.sh
 
 ENTRYPOINT ["sh","/entrypoint.sh"]
