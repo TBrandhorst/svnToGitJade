@@ -7,6 +7,7 @@ mkdir -p jadeSVN
 cd jadeSVN
 
 # Konfiguration von Git und Ausführen der Git-SVN-Initialisierung
+git config --global --add safe.directory /github/workspac
 git config --global http.sslVerify false
 expect -c "
     set timeout -1
